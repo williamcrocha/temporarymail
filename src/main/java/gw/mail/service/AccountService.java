@@ -16,8 +16,8 @@ public class AccountService {
     public Account create(Account account){
         log.info("Creating account {}",account);
         Account accountCreated = accountEndpoint.createAccount(account);
-        log.debug("Account created: {}",account);
-        return account;
+        log.debug("Account created: {}",accountCreated);
+        return accountCreated;
     }
 
     /**

@@ -28,4 +28,6 @@ Domains:
 
 Use the ExampleControler.java as sample to implement the others endpoints
 
+Use the TemporaryExemploController.java as sample to manage account and messages
+
 

@@ -42,4 +42,16 @@ public class MessageService {
         return message;
     }
 
+    /**
+     *
+     * @param authorization - must have "Bearer " at begin
+     * @param id
+     * @return
+     */
+    public void deleteMessage(String authorization, String id){
+        log.info("Deleting message id:{}",id);
+        messageEndpoint.deleteMessage(authorization,id);
+        log.debug("Message {} deleted",id);
+    }
+
 }
